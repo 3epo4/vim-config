@@ -48,7 +48,17 @@ set hidden
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set noexpandtab
+set autoindent
+set expandtab
+
+" Make command line two lines high
+set cmdheight=2
+
+" Set the status line
+set statusline==%f\ %m\ %r%{fugitive#statusline()}\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B] 
+
+" tell VIM to always put a status line in, even if there is only one window
+set laststatus=2
 
 " Shortcut to rapidly toggle 'set list'
 nmap ,l :set list!<CR>
