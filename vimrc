@@ -16,6 +16,7 @@ filetype plugin indent on
 " ------------------------------------------------------------------
 
 let g:solarized_italic=0    "default value is 1
+let g:solarized_bold=0    "default value is 1
 set background=dark
 colorscheme solarized
 
