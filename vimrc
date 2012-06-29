@@ -1,6 +1,8 @@
 " Use Vim setting, rather than Vi settings
 set nocompatible
-			
+
+set encoding=utf8
+
 call pathogen#infect()
 
 " Switch syntax highlighting on according to the current value of the
@@ -16,6 +18,12 @@ filetype plugin indent on
 let g:solarized_italic=0    "default value is 1
 set background=dark
 colorscheme solarized
+
+if has("gui_running")
+	if has("gui_win32")
+		set guifont=Consolas:h10:cANSI 
+	endif
+endif
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -37,9 +45,16 @@ set incsearch
 set hidden
 
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
-set expandtab
+set noexpandtab
 
+" Shortcut to rapidly toggle 'set list'
+nmap ,l :set list!<CR>
+
+" Use the same symbols as TextMate for tabstops end EOLs
+set listchars=tab:▸\ ,eol:¬
+						
 nmap ,<C-h> :set hlsearch!<CR>
 nmap ,e :split $MYVIMRC<CR><C-W>_
 nmap ,s :source $MYVIMRC<CR>
