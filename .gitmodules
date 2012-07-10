@@ -47,3 +47,6 @@
 [submodule "bundle/vim-session"]
 	path = bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
+[submodule "bundle/minibufexpl.vim"]
+	path = bundle/minibufexpl.vim
+	url = https://github.com/fholgado/minibufexpl.vim.git
