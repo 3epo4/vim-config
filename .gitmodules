@@ -41,3 +41,6 @@
 	path = bundle/vim-autoclose
 	url = https://github.com/Townk/vim-autoclose.git
 	ignore = dirty
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
