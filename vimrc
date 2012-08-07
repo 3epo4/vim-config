@@ -60,6 +60,9 @@ set statusline==%f\ %m\ %r%{fugitive#statusline()}\ Line:%l/%L[%p%%]\ Col:%v\ Bu
 " tell VIM to always put a status line in, even if there is only one window
 set laststatus=2
 
+"
+set directory+=,~/tmp,$TMP
+
 " Shortcut to rapidly toggle 'set list'
 nmap ,l :set list!<CR>
 
