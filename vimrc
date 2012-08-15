@@ -43,6 +43,9 @@ set nohlsearch
 " Display the match for the string while I'm still typing it
 set incsearch
 
+" Make vim quite
+set visualbell
+
 set hidden
 
 set tabstop=2
@@ -74,3 +77,10 @@ nmap ,Xj <C-W>j:close<CR>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
+
+" ------------------------------------------------------------------
+" NERDTree settings
+" ------------------------------------------------------------------
+
+nmap <F7> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['.swp', '.exe']
