@@ -53,3 +53,6 @@
 	path = bundle/minibufexpl.vim
 	url = https://github.com/fholgado/minibufexpl.vim.git
 	ignore = dirty
+[submodule "bundle/zenconding-vim"]
+	path = bundle/zenconding-vim
+	url = https://github.com/mattn/zencoding-vim.git
