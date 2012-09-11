@@ -63,6 +63,8 @@ set statusline==%f\ %m\ %r%{fugitive#statusline()}\ Line:%l/%L[%p%%]\ Col:%v\ Bu
 " tell VIM to always put a status line in, even if there is only one window
 set laststatus=2
 
+let mapleader = ','
+
 "
 set directory+=,~/tmp,$TMP
 
@@ -87,3 +89,10 @@ map Q gq
 
 nmap <F7> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['.swp', '.exe']
+
+
+" ------------------------------------------------------------------
+" MiniBufExplorer settings
+" ------------------------------------------------------------------
+
+map ,b :MiniBufExplorer<cr>
