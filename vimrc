@@ -79,6 +79,7 @@ nmap ,e :split $MYVIMRC<CR><C-W>_
 nmap ,s :source $MYVIMRC<CR>
 nmap ,x :close<CR><ESC>
 nmap ,Xj <C-W>j:close<CR>
+nmap ,n :set number!<CR>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
