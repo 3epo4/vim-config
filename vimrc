@@ -3,6 +3,7 @@ set nocompatible
 
 set encoding=utf8
 
+"Pathogen
 call pathogen#infect()
 
 " Switch syntax highlighting on according to the current value of the
@@ -97,3 +98,10 @@ let NERDTreeIgnore=['.swp', '.exe']
 " ------------------------------------------------------------------
 
 map ,b :MiniBufExplorer<cr>
+
+" Enable the optional mapping of <C-TAB> and <C-S-TAB> to a function that
+" will bring up the next or previous buffer in the current window.
+let g:miniBufExplMapCTabSwitchBufs = 1
+
+" Syntastic
+let g:syntastic_javascript_jslint_conf = ""
