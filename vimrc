@@ -102,6 +102,3 @@ map ,b :MiniBufExplorer<cr>
 " Enable the optional mapping of <C-TAB> and <C-S-TAB> to a function that
 " will bring up the next or previous buffer in the current window.
 let g:miniBufExplMapCTabSwitchBufs = 1
-
-" Syntastic
-let g:syntastic_javascript_jslint_conf = ""
